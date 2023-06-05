@@ -6,8 +6,14 @@ body {
     justify-content: center;
     align-items: center;
 }
+p {
+    position: absolute;
+    bottom: 0;
+    font-size: 10px;
+}
 .area {
-    background-color: #001800;
+    background-color: #1d1d1d;
+    width: 200px;
     height: 150px;
     display:flex;
     flex-direction: column; 
@@ -16,16 +22,29 @@ body {
     border-radius: 10px;
     padding: 10px;
     box-shadow: 1px 1px 3px #000;
+    overflow: hidden;
 }
 img {
     width: 50px;
 }
+input {
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+}
+input:focus {
+    border: solid 3px #084403;
+}
 button {
-    background-color: rgb(4, 0, 255);
+    background-color: rgb(124, 124, 124);
     padding: 5px 15px;
     border-radius: 4px;
     border: none;
     box-shadow: 1px 1px 4px #000;
+}
+button:hover {
+    background-color: #084403;
 }
 button a {
     text-decoration: none;
